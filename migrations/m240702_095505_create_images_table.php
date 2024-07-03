@@ -17,8 +17,7 @@ class m240702_095505_create_images_table extends Migration
             'id' => $this->primaryKey(),
             'product_id' => $this->integer()->notNull(),
             'name' => $this->string(100)->notNull(),
-            'path_url' => $this->string(),
-            'base_url' => $this->string(),
+            'path_url' => $this->string(255),
         ]);
 
         $this->addForeignKey(

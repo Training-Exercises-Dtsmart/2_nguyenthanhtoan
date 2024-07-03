@@ -3,9 +3,9 @@
 use yii\db\Migration;
 
 /**
- * Handles the creation of table `{{%orders}}`.
+ * Handles the creation of table `{{%orders_item}}`.
  */
-class m240702_131434_create_orders_table extends Migration
+class m240703_065005_create_orders_item_table extends Migration
 {
     /**
      * {@inheritdoc}

@@ -22,8 +22,8 @@ class m240702_092231_create_products_table extends Migration
             'description' => $this->text()->null(),
             'view_count' => $this->integer()->notNull()->defaultValue(0),
             'status' => $this->smallInteger()->notNull()->defaultValue(0),
-            'created_at' => $this->dateTime()->defaultExpression('CURRENT_TIMESTAMP'),
-            'updated_at' => $this->dateTime()->defaultExpression('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'),
+            'created_at' => $this->dateTime(),
+            'updated_at' => $this->dateTime(),
         ]);
         // add foreign key for table `user`
         $this->addForeignKey(
